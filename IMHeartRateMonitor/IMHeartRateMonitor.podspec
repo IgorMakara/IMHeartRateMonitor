@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/IgorMakara/IMHeartRateMonitor.git", :tag => "1.0.2" }
 
-  spec.source_files  = "IMHeartRateMonitor/IMHeartRateMonitor/Classes/**/*"
+  spec.source_files  = "IMHeartRateMonitor/Classes/**/*"
 
   spec.swift_versions = '4.0'
   spec.ios.deployment_target = '11.0'

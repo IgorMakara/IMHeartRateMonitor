@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,12 @@
 		8435020123B2481100D505F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435020023B2481100D505F1 /* ViewController.swift */; };
 		8435020523B2484000D505F1 /* DeviceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8435020323B2484000D505F1 /* DeviceTableViewCell.xib */; };
 		8435020623B2484000D505F1 /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435020423B2484000D505F1 /* DeviceTableViewCell.swift */; };
+		A6D16AB4DB45C3DAD68A5C97 /* Pods_IMHeartRateMonitorExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40FC15B4CCAE985D230A3265 /* Pods_IMHeartRateMonitorExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E56B187DEA10BFEA1221583 /* Pods-IMHeartRateMonitorExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMHeartRateMonitorExample.release.xcconfig"; path = "Target Support Files/Pods-IMHeartRateMonitorExample/Pods-IMHeartRateMonitorExample.release.xcconfig"; sourceTree = "<group>"; };
+		40FC15B4CCAE985D230A3265 /* Pods_IMHeartRateMonitorExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMHeartRateMonitorExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		843501E723B247A300D505F1 /* IMHeartRateMonitorExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMHeartRateMonitorExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		843501EA23B247A300D505F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		843501F323B247A300D505F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		8435020023B2481100D505F1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8435020323B2484000D505F1 /* DeviceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceTableViewCell.xib; sourceTree = "<group>"; };
 		8435020423B2484000D505F1 /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
+		CFDF29AD6B04B10DB7DB600E /* Pods-IMHeartRateMonitorExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMHeartRateMonitorExample.debug.xcconfig"; path = "Target Support Files/Pods-IMHeartRateMonitorExample/Pods-IMHeartRateMonitorExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D16AB4DB45C3DAD68A5C97 /* Pods_IMHeartRateMonitorExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		646363C2ED283739DE72C095 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40FC15B4CCAE985D230A3265 /* Pods_IMHeartRateMonitorExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		843501DE23B247A300D505F1 = {
 			isa = PBXGroup;
 			children = (
 				843501E923B247A300D505F1 /* IMHeartRateMonitorExample */,
 				843501E823B247A300D505F1 /* Products */,
+				F0A333AEDEFDE43DF9F8F243 /* Pods */,
+				646363C2ED283739DE72C095 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +93,15 @@
 			path = DeviceTableViewCell;
 			sourceTree = "<group>";
 		};
+		F0A333AEDEFDE43DF9F8F243 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFDF29AD6B04B10DB7DB600E /* Pods-IMHeartRateMonitorExample.debug.xcconfig */,
+				2E56B187DEA10BFEA1221583 /* Pods-IMHeartRateMonitorExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 843501FB23B247A300D505F1 /* Build configuration list for PBXNativeTarget "IMHeartRateMonitorExample" */;
 			buildPhases = (
+				EF3E1E029A74D53D447FEC7B /* [CP] Check Pods Manifest.lock */,
 				843501E323B247A300D505F1 /* Sources */,
 				843501E423B247A300D505F1 /* Frameworks */,
 				843501E523B247A300D505F1 /* Resources */,
+				B4299CBDE846ABFBD7E0D47B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,6 +170,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B4299CBDE846ABFBD7E0D47B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IMHeartRateMonitorExample/Pods-IMHeartRateMonitorExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IMHeartRateMonitorExample/Pods-IMHeartRateMonitorExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IMHeartRateMonitorExample/Pods-IMHeartRateMonitorExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF3E1E029A74D53D447FEC7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IMHeartRateMonitorExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		843501E323B247A300D505F1 /* Sources */ = {
@@ -286,10 +354,13 @@
 		};
 		843501FC23B247A300D505F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFDF29AD6B04B10DB7DB600E /* Pods-IMHeartRateMonitorExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FVJH2VFUD5;
 				INFOPLIST_FILE = IMHeartRateMonitorExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,10 +374,13 @@
 		};
 		843501FD23B247A300D505F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E56B187DEA10BFEA1221583 /* Pods-IMHeartRateMonitorExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FVJH2VFUD5;
 				INFOPLIST_FILE = IMHeartRateMonitorExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

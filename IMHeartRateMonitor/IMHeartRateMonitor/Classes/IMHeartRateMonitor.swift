@@ -32,16 +32,10 @@ class IMHeartRateMonitor: NSObject {
     let heartRateMeasurementCharacteristicCBUUID = CBUUID(string: "2A37")
     let bodySensorLocationCharacteristicCBUUID = CBUUID(string: "2A38")
     let deviceManufactureCharacteristicCBUUID = CBUUID(string: "2A29")
-    
-    static let shared = IMHeartRateMonitor()
-    
+
     fileprivate struct Constants {
         static let lastConnectedDeviceIdKey = "BLEHandler.LastConnectedDeviceIdKey"
     }
-    
-    //MARK: Init
-    
-    fileprivate override init() {}
     
     //MARK: Variables
     
