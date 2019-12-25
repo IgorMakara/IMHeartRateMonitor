@@ -6,18 +6,24 @@
 	objectVersion = 51;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		A6CCE50DD13C17A6DE48B3B1204C53BE /* IMHeartRateMonitor */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BC76AD19D7622E797B7251CD563F6F80 /* Build configuration list for PBXAggregateTarget "IMHeartRateMonitor" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = IMHeartRateMonitor;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		7D4C1F394ECAAFF0F6BBF47F2F7A6B49 /* IMHeartRateMonitor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F641A4EEC1564EC4807BC86992E9C856 /* IMHeartRateMonitor-dummy.m */; };
-		8501064BF668C5E08DF3045BD762CBA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		8A2C1A1F9F7710D146AC8D2083485C43 /* Pods-IMHeartRateMonitorExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6686D64FBB1913F03A897AC181C889 /* Pods-IMHeartRateMonitorExample-dummy.m */; };
-		A88B92A9309C69E7221E161CD410E35C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		BF0FBA5EA3DD638801D0A8DE731DC2ED /* Pods-IMHeartRateMonitorExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C47A8720FA9ED1EC6F91E0578A8B9CB /* Pods-IMHeartRateMonitorExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BFC1C6E0CB8203D35AE665DD09FF7269 /* IMHeartRateMonitor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AD0866C0F5DFA346479C36711ED301E /* IMHeartRateMonitor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C4EFA83BF871F2C50DE4BB3300801856 /* IMHeartRateMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AF0C23A5DB43929C8AC1F2CC20613 /* IMHeartRateMonitor.swift */; };
+		687ED4362539D3C94B56045DDD0CA4AC /* Pods-IMHeartRateMonitorExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24797842C8988E26D889C335D53A8004 /* Pods-IMHeartRateMonitorExample-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		22CDCD7D93919ADD3A9420C0A02662C1 /* PBXContainerItemProxy */ = {
+		F3520E3022A506876D793DAB5E8D4D5B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -27,209 +33,140 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AD0866C0F5DFA346479C36711ED301E /* IMHeartRateMonitor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IMHeartRateMonitor-umbrella.h"; sourceTree = "<group>"; };
-		0EBC7147C1FA32D52D61436815D76F9E /* IMHeartRateMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IMHeartRateMonitor.framework; path = IMHeartRateMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		192DC18D7C7BD48751F8D1E449E56050 /* Pods-IMHeartRateMonitorExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IMHeartRateMonitorExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		260FBC2902F9593A9ED8436B0E410DD3 /* IMHeartRateMonitor.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = IMHeartRateMonitor.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		2C47A8720FA9ED1EC6F91E0578A8B9CB /* Pods-IMHeartRateMonitorExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IMHeartRateMonitorExample-umbrella.h"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		333AF0C23A5DB43929C8AC1F2CC20613 /* IMHeartRateMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMHeartRateMonitor.swift; path = IMHeartRateMonitor/Classes/IMHeartRateMonitor.swift; sourceTree = "<group>"; };
-		40ABEDFC36323B8EF1B027376731058C /* IMHeartRateMonitor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IMHeartRateMonitor-prefix.pch"; sourceTree = "<group>"; };
-		49EB59BAA4E24E122BD8170E1DE33845 /* IMHeartRateMonitor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IMHeartRateMonitor.xcconfig; sourceTree = "<group>"; };
-		553A26350E55F5C34AC7E3E80E77D9C6 /* IMHeartRateMonitor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IMHeartRateMonitor.modulemap; sourceTree = "<group>"; };
-		5C6686D64FBB1913F03A897AC181C889 /* Pods-IMHeartRateMonitorExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IMHeartRateMonitorExample-dummy.m"; sourceTree = "<group>"; };
-		6D3B967A496DAFE225722B32D5470FD2 /* Pods-IMHeartRateMonitorExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMHeartRateMonitorExample.debug.xcconfig"; sourceTree = "<group>"; };
-		6F911EEEAD636AFD4D114C022AA174E0 /* Pods-IMHeartRateMonitorExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IMHeartRateMonitorExample-Info.plist"; sourceTree = "<group>"; };
-		8451FC988AB12433D4B9482DDEDA613B /* Pods-IMHeartRateMonitorExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IMHeartRateMonitorExample.modulemap"; sourceTree = "<group>"; };
-		91F3FA678484523F7A90A4FE7278E5DB /* Pods-IMHeartRateMonitorExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IMHeartRateMonitorExample-frameworks.sh"; sourceTree = "<group>"; };
+		19893BB87B8854086087D3483D588315 /* IMHeartRateMonitor.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = IMHeartRateMonitor.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		24797842C8988E26D889C335D53A8004 /* Pods-IMHeartRateMonitorExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IMHeartRateMonitorExample-dummy.m"; sourceTree = "<group>"; };
+		26BC8B20A4EDB8074FA462EA1DA2BF3B /* Pods-IMHeartRateMonitorExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMHeartRateMonitorExample.release.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A106F657BDFFB9EB5BFE5BA32367B07E /* IMHeartRateMonitor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IMHeartRateMonitor-Info.plist"; sourceTree = "<group>"; };
-		AA10DC850D126AFFA855BA46B253CA33 /* Pods-IMHeartRateMonitorExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IMHeartRateMonitorExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		B387E1548EFEDFF653F2680CCA5005C2 /* Pods_IMHeartRateMonitorExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IMHeartRateMonitorExample.framework; path = "Pods-IMHeartRateMonitorExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D443E9272635CC177CBCFD60AA687273 /* Pods-IMHeartRateMonitorExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMHeartRateMonitorExample.release.xcconfig"; sourceTree = "<group>"; };
-		F641A4EEC1564EC4807BC86992E9C856 /* IMHeartRateMonitor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IMHeartRateMonitor-dummy.m"; sourceTree = "<group>"; };
+		B0FC5E21C640E76EE4C635BFAAEA85B4 /* Pods-IMHeartRateMonitorExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IMHeartRateMonitorExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B387E1548EFEDFF653F2680CCA5005C2 /* libPods-IMHeartRateMonitorExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-IMHeartRateMonitorExample.a"; path = "libPods-IMHeartRateMonitorExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA1215490DC7C7B4A65FD68A84D49DBA /* Pods-IMHeartRateMonitorExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IMHeartRateMonitorExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		EA37A11EE89B143670A2E337C1C4DD25 /* Pods-IMHeartRateMonitorExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMHeartRateMonitorExample.debug.xcconfig"; sourceTree = "<group>"; };
+		FBC12B333EA693A68DC081EB271FD549 /* IMHeartRateMonitor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IMHeartRateMonitor.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9E20BC15A1BFBA84ED2EE0CEE5CAF98C /* Frameworks */ = {
+		97D411379179F5A736E1D712B3B8DF7A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A88B92A9309C69E7221E161CD410E35C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F70172D0485F115730A06A450457ADD3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8501064BF668C5E08DF3045BD762CBA8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05F06B11A1A0C2316CB725AA392E43FF /* Development Pods */ = {
+		05669DCA2A6C125EAE24B9C657709428 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				751FAD750C3067F0593F110C9C3B986E /* IMHeartRateMonitor */,
+				B387E1548EFEDFF653F2680CCA5005C2 /* libPods-IMHeartRateMonitorExample.a */,
 			);
-			name = "Development Pods";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		19EAECE7133C4F4714B7F09218184628 /* Support Files */ = {
+		4A2613E96A3EA7D0E2FC6EBA515C66B1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				553A26350E55F5C34AC7E3E80E77D9C6 /* IMHeartRateMonitor.modulemap */,
-				49EB59BAA4E24E122BD8170E1DE33845 /* IMHeartRateMonitor.xcconfig */,
-				F641A4EEC1564EC4807BC86992E9C856 /* IMHeartRateMonitor-dummy.m */,
-				A106F657BDFFB9EB5BFE5BA32367B07E /* IMHeartRateMonitor-Info.plist */,
-				40ABEDFC36323B8EF1B027376731058C /* IMHeartRateMonitor-prefix.pch */,
-				0AD0866C0F5DFA346479C36711ED301E /* IMHeartRateMonitor-umbrella.h */,
+				FBC12B333EA693A68DC081EB271FD549 /* IMHeartRateMonitor.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../IMHeartRateMonitorExample/Pods/Target Support Files/IMHeartRateMonitor";
 			sourceTree = "<group>";
 		};
-		23B9E6C7A0402596342998BDAF213FFA /* Pods-IMHeartRateMonitorExample */ = {
+		4AD038EC453F726D70DECCE6058D2534 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8451FC988AB12433D4B9482DDEDA613B /* Pods-IMHeartRateMonitorExample.modulemap */,
-				192DC18D7C7BD48751F8D1E449E56050 /* Pods-IMHeartRateMonitorExample-acknowledgements.markdown */,
-				AA10DC850D126AFFA855BA46B253CA33 /* Pods-IMHeartRateMonitorExample-acknowledgements.plist */,
-				5C6686D64FBB1913F03A897AC181C889 /* Pods-IMHeartRateMonitorExample-dummy.m */,
-				91F3FA678484523F7A90A4FE7278E5DB /* Pods-IMHeartRateMonitorExample-frameworks.sh */,
-				6F911EEEAD636AFD4D114C022AA174E0 /* Pods-IMHeartRateMonitorExample-Info.plist */,
-				2C47A8720FA9ED1EC6F91E0578A8B9CB /* Pods-IMHeartRateMonitorExample-umbrella.h */,
-				6D3B967A496DAFE225722B32D5470FD2 /* Pods-IMHeartRateMonitorExample.debug.xcconfig */,
-				D443E9272635CC177CBCFD60AA687273 /* Pods-IMHeartRateMonitorExample.release.xcconfig */,
+				BE099B76BB72820081FCDDD688C13C3D /* Pods-IMHeartRateMonitorExample */,
 			);
-			name = "Pods-IMHeartRateMonitorExample";
-			path = "Target Support Files/Pods-IMHeartRateMonitorExample";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		2BCF70BE49D05A2873F0312170BBDEC5 /* Pod */ = {
+		7FDFDE17756FCFD813B8FDB19892047D /* IMHeartRateMonitor */ = {
 			isa = PBXGroup;
 			children = (
-				260FBC2902F9593A9ED8436B0E410DD3 /* IMHeartRateMonitor.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		751FAD750C3067F0593F110C9C3B986E /* IMHeartRateMonitor */ = {
-			isa = PBXGroup;
-			children = (
-				333AF0C23A5DB43929C8AC1F2CC20613 /* IMHeartRateMonitor.swift */,
-				2BCF70BE49D05A2873F0312170BBDEC5 /* Pod */,
-				19EAECE7133C4F4714B7F09218184628 /* Support Files */,
+				FD04739AAC87277B9F3D194783698B36 /* Pod */,
+				4A2613E96A3EA7D0E2FC6EBA515C66B1 /* Support Files */,
 			);
 			name = IMHeartRateMonitor;
 			path = ../../IMHeartRateMonitor;
 			sourceTree = "<group>";
 		};
-		81B0C9B437C5B8180DEF961392F8251E /* Products */ = {
+		A38862A162034FB0D0520D7E6B4FB0E6 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0EBC7147C1FA32D52D61436815D76F9E /* IMHeartRateMonitor.framework */,
-				B387E1548EFEDFF653F2680CCA5005C2 /* Pods_IMHeartRateMonitorExample.framework */,
+				7FDFDE17756FCFD813B8FDB19892047D /* IMHeartRateMonitor */,
 			);
-			name = Products;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		BE099B76BB72820081FCDDD688C13C3D /* Pods-IMHeartRateMonitorExample */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				B0FC5E21C640E76EE4C635BFAAEA85B4 /* Pods-IMHeartRateMonitorExample-acknowledgements.markdown */,
+				BA1215490DC7C7B4A65FD68A84D49DBA /* Pods-IMHeartRateMonitorExample-acknowledgements.plist */,
+				24797842C8988E26D889C335D53A8004 /* Pods-IMHeartRateMonitorExample-dummy.m */,
+				EA37A11EE89B143670A2E337C1C4DD25 /* Pods-IMHeartRateMonitorExample.debug.xcconfig */,
+				26BC8B20A4EDB8074FA462EA1DA2BF3B /* Pods-IMHeartRateMonitorExample.release.xcconfig */,
 			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		C20BB8FE0DB7058EC64C977EBB503BE6 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				23B9E6C7A0402596342998BDAF213FFA /* Pods-IMHeartRateMonitorExample */,
-			);
-			name = "Targets Support Files";
+			name = "Pods-IMHeartRateMonitorExample";
+			path = "Target Support Files/Pods-IMHeartRateMonitorExample";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				05F06B11A1A0C2316CB725AA392E43FF /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				81B0C9B437C5B8180DEF961392F8251E /* Products */,
-				C20BB8FE0DB7058EC64C977EBB503BE6 /* Targets Support Files */,
+				A38862A162034FB0D0520D7E6B4FB0E6 /* Development Pods */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				05669DCA2A6C125EAE24B9C657709428 /* Products */,
+				4AD038EC453F726D70DECCE6058D2534 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD04739AAC87277B9F3D194783698B36 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				19893BB87B8854086087D3483D588315 /* IMHeartRateMonitor.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		34FED2FCE45C7AB38072BE9D66E26A7B /* Headers */ = {
+		243507BB565AFC0A06E77013DD377CF7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF0FBA5EA3DD638801D0A8DE731DC2ED /* Pods-IMHeartRateMonitorExample-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		564995270B31D4FD2695ABCE1D2D9EF6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BFC1C6E0CB8203D35AE665DD09FF7269 /* IMHeartRateMonitor-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A6CCE50DD13C17A6DE48B3B1204C53BE /* IMHeartRateMonitor */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C60A0CBE13F9A0FF5ABE672704F7E12C /* Build configuration list for PBXNativeTarget "IMHeartRateMonitor" */;
-			buildPhases = (
-				564995270B31D4FD2695ABCE1D2D9EF6 /* Headers */,
-				41D4DDEE0DC51FEE7BA5396FF98AF060 /* Sources */,
-				F70172D0485F115730A06A450457ADD3 /* Frameworks */,
-				AB11AE3C0AF5683DA3BBCB8B61424263 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = IMHeartRateMonitor;
-			productName = IMHeartRateMonitor;
-			productReference = 0EBC7147C1FA32D52D61436815D76F9E /* IMHeartRateMonitor.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		AD4222AEDF939249FE763D521D840AD2 /* Pods-IMHeartRateMonitorExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 999AD326D3DFD3477D1E77C851A54CB5 /* Build configuration list for PBXNativeTarget "Pods-IMHeartRateMonitorExample" */;
+			buildConfigurationList = DA41C99D996AEEDB0CDA85628CD2A51E /* Build configuration list for PBXNativeTarget "Pods-IMHeartRateMonitorExample" */;
 			buildPhases = (
-				34FED2FCE45C7AB38072BE9D66E26A7B /* Headers */,
-				216C16BEDC722EA2A3070446399A958C /* Sources */,
-				9E20BC15A1BFBA84ED2EE0CEE5CAF98C /* Frameworks */,
-				1DEAC50CCFFCD3037D7A10653F0CA25C /* Resources */,
+				243507BB565AFC0A06E77013DD377CF7 /* Headers */,
+				75E8A949C0270D1EC107DA23F38A52FC /* Sources */,
+				97D411379179F5A736E1D712B3B8DF7A /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6A3AE3CD9D632605753A5D532A004685 /* PBXTargetDependency */,
+				50682EA896F375B7356A8864FFF7E00B /* PBXTargetDependency */,
 			);
 			name = "Pods-IMHeartRateMonitorExample";
 			productName = "Pods-IMHeartRateMonitorExample";
-			productReference = B387E1548EFEDFF653F2680CCA5005C2 /* Pods_IMHeartRateMonitorExample.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = B387E1548EFEDFF653F2680CCA5005C2 /* libPods-IMHeartRateMonitorExample.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -249,7 +186,7 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 81B0C9B437C5B8180DEF961392F8251E /* Products */;
+			productRefGroup = 05669DCA2A6C125EAE24B9C657709428 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -259,89 +196,27 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		1DEAC50CCFFCD3037D7A10653F0CA25C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB11AE3C0AF5683DA3BBCB8B61424263 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		216C16BEDC722EA2A3070446399A958C /* Sources */ = {
+		75E8A949C0270D1EC107DA23F38A52FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A2C1A1F9F7710D146AC8D2083485C43 /* Pods-IMHeartRateMonitorExample-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		41D4DDEE0DC51FEE7BA5396FF98AF060 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D4C1F394ECAAFF0F6BBF47F2F7A6B49 /* IMHeartRateMonitor-dummy.m in Sources */,
-				C4EFA83BF871F2C50DE4BB3300801856 /* IMHeartRateMonitor.swift in Sources */,
+				687ED4362539D3C94B56045DDD0CA4AC /* Pods-IMHeartRateMonitorExample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6A3AE3CD9D632605753A5D532A004685 /* PBXTargetDependency */ = {
+		50682EA896F375B7356A8864FFF7E00B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = IMHeartRateMonitor;
 			target = A6CCE50DD13C17A6DE48B3B1204C53BE /* IMHeartRateMonitor */;
-			targetProxy = 22CDCD7D93919ADD3A9420C0A02662C1 /* PBXContainerItemProxy */;
+			targetProxy = F3520E3022A506876D793DAB5E8D4D5B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1D840146F8FC76164874649E5EE07AB8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49EB59BAA4E24E122BD8170E1DE33845 /* IMHeartRateMonitor.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/IMHeartRateMonitor/IMHeartRateMonitor-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/IMHeartRateMonitor/IMHeartRateMonitor-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/IMHeartRateMonitor/IMHeartRateMonitor.modulemap";
-				PRODUCT_MODULE_NAME = IMHeartRateMonitor;
-				PRODUCT_NAME = IMHeartRateMonitor;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		257497152829C177993B5EC99C1D227A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -402,79 +277,83 @@
 			};
 			name = Release;
 		};
-		40AD684D21CF1324A3C95C4FF0AE7998 /* Release */ = {
+		33F2DEDEDA1619E13181EC58565D3317 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49EB59BAA4E24E122BD8170E1DE33845 /* IMHeartRateMonitor.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/IMHeartRateMonitor/IMHeartRateMonitor-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/IMHeartRateMonitor/IMHeartRateMonitor-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/IMHeartRateMonitor/IMHeartRateMonitor.modulemap";
-				PRODUCT_MODULE_NAME = IMHeartRateMonitor;
-				PRODUCT_NAME = IMHeartRateMonitor;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C1D480EF99659484EC2F806E5D370CF4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D443E9272635CC177CBCFD60AA687273 /* Pods-IMHeartRateMonitorExample.release.xcconfig */;
+			baseConfigurationReference = EA37A11EE89B143670A2E337C1C4DD25 /* Pods-IMHeartRateMonitorExample.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-IMHeartRateMonitorExample/Pods-IMHeartRateMonitorExample-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-IMHeartRateMonitorExample/Pods-IMHeartRateMonitorExample.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9ADD3574B473C619B37E03A98D18EAD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26BC8B20A4EDB8074FA462EA1DA2BF3B /* Pods-IMHeartRateMonitorExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A26ECE336733657DFBD612F03A247DF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBC12B333EA693A68DC081EB271FD549 /* IMHeartRateMonitor.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4B7E2AB9C221E74BDCCA09E6D28F694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBC12B333EA693A68DC081EB271FD549 /* IMHeartRateMonitor.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -542,44 +421,6 @@
 			};
 			name = Debug;
 		};
-		F09FE5A0D70925E9EB021ABB29140DCE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D3B967A496DAFE225722B32D5470FD2 /* Pods-IMHeartRateMonitorExample.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-IMHeartRateMonitorExample/Pods-IMHeartRateMonitorExample-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-IMHeartRateMonitorExample/Pods-IMHeartRateMonitorExample.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -592,20 +433,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		999AD326D3DFD3477D1E77C851A54CB5 /* Build configuration list for PBXNativeTarget "Pods-IMHeartRateMonitorExample" */ = {
+		BC76AD19D7622E797B7251CD563F6F80 /* Build configuration list for PBXAggregateTarget "IMHeartRateMonitor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F09FE5A0D70925E9EB021ABB29140DCE /* Debug */,
-				C1D480EF99659484EC2F806E5D370CF4 /* Release */,
+				A26ECE336733657DFBD612F03A247DF5 /* Debug */,
+				D4B7E2AB9C221E74BDCCA09E6D28F694 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C60A0CBE13F9A0FF5ABE672704F7E12C /* Build configuration list for PBXNativeTarget "IMHeartRateMonitor" */ = {
+		DA41C99D996AEEDB0CDA85628CD2A51E /* Build configuration list for PBXNativeTarget "Pods-IMHeartRateMonitorExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1D840146F8FC76164874649E5EE07AB8 /* Debug */,
-				40AD684D21CF1324A3C95C4FF0AE7998 /* Release */,
+				33F2DEDEDA1619E13181EC58565D3317 /* Debug */,
+				9ADD3574B473C619B37E03A98D18EAD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

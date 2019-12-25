@@ -28,10 +28,10 @@ public enum ConnectionState {
 open class IMHeartRateMonitorServise: NSObject {
     
     fileprivate let heartRateServiceCBUUID = CBUUID(string: "0x180D")
-    let deviceInfoServiceCBUUID = CBUUID(string: "0x180A")
-    let heartRateMeasurementCharacteristicCBUUID = CBUUID(string: "2A37")
-    let bodySensorLocationCharacteristicCBUUID = CBUUID(string: "2A38")
-    let deviceManufactureCharacteristicCBUUID = CBUUID(string: "2A29")
+    fileprivate let deviceInfoServiceCBUUID = CBUUID(string: "0x180A")
+    fileprivate let heartRateMeasurementCharacteristicCBUUID = CBUUID(string: "2A37")
+    fileprivate let bodySensorLocationCharacteristicCBUUID = CBUUID(string: "2A38")
+    fileprivate let deviceManufactureCharacteristicCBUUID = CBUUID(string: "2A29")
 
     fileprivate struct Constants {
         static let lastConnectedDeviceIdKey = "BLEHandler.LastConnectedDeviceIdKey"
@@ -62,7 +62,7 @@ open class IMHeartRateMonitorServise: NSObject {
     //MARK: Public
     
     public func startScaning() {
-        centralManager = CBCentralManager(delegate: self, queue: nil)
+        centralManager = CBCentralManager(delegate: self, queue: DispatchQueue.main)
     }
     
     public func disconnectPeripherial(_ peripherial: CBPeripheral? = nil) {
@@ -81,7 +81,7 @@ open class IMHeartRateMonitorServise: NSObject {
         self.heartRateChangedCompletion = heartRateChangedCompletion
     }
     
-    public func getPeripherialName() -> String? {
+    public func getManufacturePeripherialName() -> String? {
         
         for servise in connectedDevice?.services ?? [] {
             
@@ -95,7 +95,7 @@ open class IMHeartRateMonitorServise: NSObject {
                             return "\(manufacturerName) \(connectedDevice?.name ?? "")"
                         }
                     }else {
-                        return (connectedDevice?.name ?? "")
+                        return connectedDevice?.name
                     }
                 }
             }
@@ -126,7 +126,7 @@ fileprivate extension IMHeartRateMonitorServise {
 //MARK: CBCentralManagerDelegate
 
 extension IMHeartRateMonitorServise: CBCentralManagerDelegate {
-    public func centralManagerDidUpdateState(_ central: CBCentralManager) {
+   @objc public func centralManagerDidUpdateState(_ central: CBCentralManager) {
         switch central.state {
         case .unknown:
             print("central.state is .unknown")
@@ -140,15 +140,16 @@ extension IMHeartRateMonitorServise: CBCentralManagerDelegate {
             print("central.state is .poweredOff")
         case .poweredOn:
             print("central.state is .poweredOn")
-            centralManager?.scanForPeripherals(withServices: nil, options: nil)
+            centralManager?.scanForPeripherals(withServices: [heartRateServiceCBUUID, deviceInfoServiceCBUUID], options: nil)
         @unknown default:
             print("central.state is unknown")
         }
     }
-    
-    private func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral,
-                        advertisementData: [String : Any], rssi RSSI: NSNumber) {
+
+    @objc public func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         didDiscoverPeripheralCompletion?(peripheral)
+        
+        print("disccover")
         
         if let lastConnectedDevideId = retriveLastDeviceConnectedId() {
             if peripheral.identifier.uuidString == lastConnectedDevideId {
@@ -157,7 +158,7 @@ extension IMHeartRateMonitorServise: CBCentralManagerDelegate {
         }
     }
     
-    private func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
+    @objc public func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
         connectionState = .connected
         
         didConnectCompletion?()
@@ -167,7 +168,7 @@ extension IMHeartRateMonitorServise: CBCentralManagerDelegate {
         saveLastConnectedDevice()
     }
     
-    private func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
+    @objc public func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
         connectionState = .disconnected
         connectedDevice = nil
         didDisconnectCompletion?()
@@ -177,7 +178,7 @@ extension IMHeartRateMonitorServise: CBCentralManagerDelegate {
 //MARK: CBPeripheralDelegate
 
 extension IMHeartRateMonitorServise: CBPeripheralDelegate {
-    private func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
+    @objc public func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
         guard let services = peripheral.services else { return }
         for service in services {
             switch service.uuid {
@@ -191,7 +192,7 @@ extension IMHeartRateMonitorServise: CBPeripheralDelegate {
         }
     }
     
-    private func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: Error?) {
+    @objc public func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: Error?) {
         guard let characteristics = service.characteristics else { return }
         
         for characteristic in characteristics {
@@ -208,7 +209,7 @@ extension IMHeartRateMonitorServise: CBPeripheralDelegate {
         }
     }
 
-    private func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
+    @objc public func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
         switch characteristic.uuid {
         case bodySensorLocationCharacteristicCBUUID:
             let bodySensorLocation = bodyLocation(from: characteristic)

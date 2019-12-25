@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A6CCE50DD13C17A6DE48B3B1204C53BE"
-               BuildableName = "IMHeartRateMonitor.framework"
+               BuildableName = "IMHeartRateMonitor"
                BlueprintName = "IMHeartRateMonitor"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
