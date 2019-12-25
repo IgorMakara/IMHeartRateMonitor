@@ -12,7 +12,7 @@ import IMHeartRateMonitor
 
 class ViewController: UIViewController {
 
-    var availableDevices: [CBPeripheral] = [] {
+    fileprivate var availableDevices: [CBPeripheral] = [] {
         didSet { devicesTableView.reloadData() }
     }
     
@@ -20,18 +20,20 @@ class ViewController: UIViewController {
         didSet { setupTableView() }
     }
     
+    fileprivate var heartRateMonitor = IMHeartRateMonitorServise.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        IMHeartRateMonitor.shared.didConnectCompletion = {
+        heartRateMonitor.didConnectCompletion = {
             
         }
         
-        IMHeartRateMonitor.shared.didDiscoverPeripheralCompletion = { peripherial in
+        heartRateMonitor.didDiscoverPeripheralCompletion = { peripherial in
             self.addPeripheral(peripherial)
         }
     
-        IMHeartRateMonitor.shared.startScaning()
+        heartRateMonitor.startScaning()
     }
 }
 
@@ -69,7 +71,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         let device = availableDevices[indexPath.row]
         
 
-        IMHeartRateMonitor.shared.connectToPeripherial(device, heartRateChangedCompletion: { heartRate in
+        heartRateMonitor.connectToPeripherial(device, heartRateChangedCompletion: { heartRate in
             cell?.heartRate = heartRate
         })
     }

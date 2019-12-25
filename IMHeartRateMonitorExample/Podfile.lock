@@ -1,0 +1,16 @@
+PODS:
+  - IMHeartRateMonitor (1.0.2)
+
+DEPENDENCIES:
+  - IMHeartRateMonitor (from `../IMHeartRateMonitor/`)
+
+EXTERNAL SOURCES:
+  IMHeartRateMonitor:
+    :path: "../IMHeartRateMonitor/"
+
+SPEC CHECKSUMS:
+  IMHeartRateMonitor: 33288fee2ebe26ca91b351b5f688f90b9e4c3f43
+
+PODFILE CHECKSUM: 92ba49117d205136fa4c480868b176c846a226cc
+
+COCOAPODS: 1.8.4

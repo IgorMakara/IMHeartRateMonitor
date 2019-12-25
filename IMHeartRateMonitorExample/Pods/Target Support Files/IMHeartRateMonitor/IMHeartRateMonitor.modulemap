@@ -1,0 +1,6 @@
+framework module IMHeartRateMonitor {
+  umbrella header "IMHeartRateMonitor-umbrella.h"
+
+  export *
+  module * { export * }
+}
