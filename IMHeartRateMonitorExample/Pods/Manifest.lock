@@ -2,15 +2,15 @@ PODS:
   - IMHeartRateMonitor (1.0.0)
 
 DEPENDENCIES:
-  - IMHeartRateMonitor (from `../IMHeartRateMonitor/`)
+  - IMHeartRateMonitor (~> 1.0)
 
-EXTERNAL SOURCES:
-  IMHeartRateMonitor:
-    :path: "../IMHeartRateMonitor/"
+SPEC REPOS:
+  trunk:
+    - IMHeartRateMonitor
 
 SPEC CHECKSUMS:
   IMHeartRateMonitor: 5b9901a6edaf40d3f66cfbf16fd1d4d95e7faa04
 
-PODFILE CHECKSUM: 7d008e04ec4e78bca7c244e6bbfaf395deb120c5
+PODFILE CHECKSUM: 4c916e5e0e24f61de19dc47b691862eb100c6092
 
 COCOAPODS: 1.8.4

@@ -6,6 +6,6 @@ target 'IMHeartRateMonitorExample' do
   #use_frameworks!
 
   # Pods for IMHeartRateMonitorExample
-  pod 'IMHeartRateMonitor', :path => "../IMHeartRateMonitor/"
+  pod 'IMHeartRateMonitor', '~> 1.0'
 
 end

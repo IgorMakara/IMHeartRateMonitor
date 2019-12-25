@@ -33,15 +33,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		19893BB87B8854086087D3483D588315 /* IMHeartRateMonitor.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = IMHeartRateMonitor.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		24797842C8988E26D889C335D53A8004 /* Pods-IMHeartRateMonitorExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IMHeartRateMonitorExample-dummy.m"; sourceTree = "<group>"; };
 		26BC8B20A4EDB8074FA462EA1DA2BF3B /* Pods-IMHeartRateMonitorExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMHeartRateMonitorExample.release.xcconfig"; sourceTree = "<group>"; };
+		481C3C943F867D537D60633E38CB7808 /* IMHeartRateMonitor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IMHeartRateMonitor.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B0FC5E21C640E76EE4C635BFAAEA85B4 /* Pods-IMHeartRateMonitorExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IMHeartRateMonitorExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B387E1548EFEDFF653F2680CCA5005C2 /* libPods-IMHeartRateMonitorExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-IMHeartRateMonitorExample.a"; path = "libPods-IMHeartRateMonitorExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1215490DC7C7B4A65FD68A84D49DBA /* Pods-IMHeartRateMonitorExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IMHeartRateMonitorExample-acknowledgements.plist"; sourceTree = "<group>"; };
 		EA37A11EE89B143670A2E337C1C4DD25 /* Pods-IMHeartRateMonitorExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMHeartRateMonitorExample.debug.xcconfig"; sourceTree = "<group>"; };
-		FBC12B333EA693A68DC081EB271FD549 /* IMHeartRateMonitor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IMHeartRateMonitor.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		021C1115ED28B59CE93E4D5736DDC0D5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				481C3C943F867D537D60633E38CB7808 /* IMHeartRateMonitor.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IMHeartRateMonitor";
+			sourceTree = "<group>";
+		};
 		05669DCA2A6C125EAE24B9C657709428 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -63,39 +71,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4A2613E96A3EA7D0E2FC6EBA515C66B1 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FBC12B333EA693A68DC081EB271FD549 /* IMHeartRateMonitor.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../IMHeartRateMonitorExample/Pods/Target Support Files/IMHeartRateMonitor";
-			sourceTree = "<group>";
-		};
 		4AD038EC453F726D70DECCE6058D2534 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				BE099B76BB72820081FCDDD688C13C3D /* Pods-IMHeartRateMonitorExample */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		7FDFDE17756FCFD813B8FDB19892047D /* IMHeartRateMonitor */ = {
-			isa = PBXGroup;
-			children = (
-				FD04739AAC87277B9F3D194783698B36 /* Pod */,
-				4A2613E96A3EA7D0E2FC6EBA515C66B1 /* Support Files */,
-			);
-			name = IMHeartRateMonitor;
-			path = ../../IMHeartRateMonitor;
-			sourceTree = "<group>";
-		};
-		A38862A162034FB0D0520D7E6B4FB0E6 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7FDFDE17756FCFD813B8FDB19892047D /* IMHeartRateMonitor */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		BE099B76BB72820081FCDDD688C13C3D /* Pods-IMHeartRateMonitorExample */ = {
@@ -111,12 +92,20 @@
 			path = "Target Support Files/Pods-IMHeartRateMonitorExample";
 			sourceTree = "<group>";
 		};
+		C6C6B81136F858EB9FDA6050B380D45E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8916DCB8EDEE9DDF751E4850A5A3BFE /* IMHeartRateMonitor */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				A38862A162034FB0D0520D7E6B4FB0E6 /* Development Pods */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				C6C6B81136F858EB9FDA6050B380D45E /* Pods */,
 				05669DCA2A6C125EAE24B9C657709428 /* Products */,
 				4AD038EC453F726D70DECCE6058D2534 /* Targets Support Files */,
 			);
@@ -129,12 +118,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FD04739AAC87277B9F3D194783698B36 /* Pod */ = {
+		E8916DCB8EDEE9DDF751E4850A5A3BFE /* IMHeartRateMonitor */ = {
 			isa = PBXGroup;
 			children = (
-				19893BB87B8854086087D3483D588315 /* IMHeartRateMonitor.podspec */,
+				021C1115ED28B59CE93E4D5736DDC0D5 /* Support Files */,
 			);
-			name = Pod;
+			name = IMHeartRateMonitor;
+			path = IMHeartRateMonitor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,7 +314,7 @@
 		};
 		A26ECE336733657DFBD612F03A247DF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBC12B333EA693A68DC081EB271FD549 /* IMHeartRateMonitor.xcconfig */;
+			baseConfigurationReference = 481C3C943F867D537D60633E38CB7808 /* IMHeartRateMonitor.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -341,7 +331,7 @@
 		};
 		D4B7E2AB9C221E74BDCCA09E6D28F694 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBC12B333EA693A68DC081EB271FD549 /* IMHeartRateMonitor.xcconfig */;
+			baseConfigurationReference = 481C3C943F867D537D60633E38CB7808 /* IMHeartRateMonitor.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = NO;

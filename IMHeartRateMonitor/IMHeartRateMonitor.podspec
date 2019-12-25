@@ -3,7 +3,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "IMHeartRateMonitor"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.5"
   spec.summary      = "IMHeartRateMonitor is a lightweight library on top of Core Bluetooth to interact with BLE Heart Rate Monitors."
   spec.homepage     = "https://github.com/IgorMakara/IMHeartRateMonitor"
 
@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
 
   # spec.platform   = :ios, "11.0"
 
-  spec.source       = { :git => "https://github.com/IgorMakara/IMHeartRateMonitor.git", :tag => "1.0.0" }
+  spec.source       = { :git => "https://github.com/IgorMakara/IMHeartRateMonitor.git", :tag => "1.0.5" }
 
   spec.source_files  = "IMHeartRateMonitor/IMHeartRateMonitor/Classes/**/*"
 
