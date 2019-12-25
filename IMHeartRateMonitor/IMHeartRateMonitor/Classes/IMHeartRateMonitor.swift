@@ -146,7 +146,7 @@ extension IMHeartRateMonitorServise: CBCentralManagerDelegate {
         }
     }
     
-    func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral,
+    private func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral,
                         advertisementData: [String : Any], rssi RSSI: NSNumber) {
         didDiscoverPeripheralCompletion?(peripheral)
         
@@ -157,7 +157,7 @@ extension IMHeartRateMonitorServise: CBCentralManagerDelegate {
         }
     }
     
-    func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
+    private func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
         connectionState = .connected
         
         didConnectCompletion?()
@@ -167,7 +167,7 @@ extension IMHeartRateMonitorServise: CBCentralManagerDelegate {
         saveLastConnectedDevice()
     }
     
-    func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
+    private func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
         connectionState = .disconnected
         connectedDevice = nil
         didDisconnectCompletion?()
@@ -177,7 +177,7 @@ extension IMHeartRateMonitorServise: CBCentralManagerDelegate {
 //MARK: CBPeripheralDelegate
 
 extension IMHeartRateMonitorServise: CBPeripheralDelegate {
-    func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
+    private func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
         guard let services = peripheral.services else { return }
         for service in services {
             switch service.uuid {
@@ -191,7 +191,7 @@ extension IMHeartRateMonitorServise: CBPeripheralDelegate {
         }
     }
     
-    func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: Error?) {
+    private func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: Error?) {
         guard let characteristics = service.characteristics else { return }
         
         for characteristic in characteristics {
@@ -208,7 +208,7 @@ extension IMHeartRateMonitorServise: CBPeripheralDelegate {
         }
     }
 
-    func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
+    private func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
         switch characteristic.uuid {
         case bodySensorLocationCharacteristicCBUUID:
             let bodySensorLocation = bodyLocation(from: characteristic)
