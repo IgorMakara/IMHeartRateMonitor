@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		29AF4521CCDAB5E4F6176A96 /* libPods-IMHeartRateMonitorExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F8F36141581A9F15D3C8E1A /* libPods-IMHeartRateMonitorExample.a */; };
+		3CA5492613332BA33B853D3E /* Pods_IMHeartRateMonitorExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB254AE041EBBC4F24E52C9 /* Pods_IMHeartRateMonitorExample.framework */; };
 		843501EB23B247A300D505F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843501EA23B247A300D505F1 /* AppDelegate.swift */; };
 		843501F423B247A300D505F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843501F323B247A300D505F1 /* Assets.xcassets */; };
 		843501F723B247A300D505F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843501F523B247A300D505F1 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,6 @@
 
 /* Begin PBXFileReference section */
 		2E56B187DEA10BFEA1221583 /* Pods-IMHeartRateMonitorExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMHeartRateMonitorExample.release.xcconfig"; path = "Target Support Files/Pods-IMHeartRateMonitorExample/Pods-IMHeartRateMonitorExample.release.xcconfig"; sourceTree = "<group>"; };
-		2F8F36141581A9F15D3C8E1A /* libPods-IMHeartRateMonitorExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IMHeartRateMonitorExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		843501E723B247A300D505F1 /* IMHeartRateMonitorExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMHeartRateMonitorExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		843501EA23B247A300D505F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		843501F323B247A300D505F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -29,8 +28,8 @@
 		8435020023B2481100D505F1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8435020323B2484000D505F1 /* DeviceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceTableViewCell.xib; sourceTree = "<group>"; };
 		8435020423B2484000D505F1 /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
-		84F8B84523B38CA000078500 /* IMHeartRateMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMHeartRateMonitor.swift; sourceTree = "<group>"; };
 		CFDF29AD6B04B10DB7DB600E /* Pods-IMHeartRateMonitorExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMHeartRateMonitorExample.debug.xcconfig"; path = "Target Support Files/Pods-IMHeartRateMonitorExample/Pods-IMHeartRateMonitorExample.debug.xcconfig"; sourceTree = "<group>"; };
+		DEB254AE041EBBC4F24E52C9 /* Pods_IMHeartRateMonitorExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMHeartRateMonitorExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29AF4521CCDAB5E4F6176A96 /* libPods-IMHeartRateMonitorExample.a in Frameworks */,
+				3CA5492613332BA33B853D3E /* Pods_IMHeartRateMonitorExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +47,7 @@
 		646363C2ED283739DE72C095 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2F8F36141581A9F15D3C8E1A /* libPods-IMHeartRateMonitorExample.a */,
+				DEB254AE041EBBC4F24E52C9 /* Pods_IMHeartRateMonitorExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -77,7 +76,6 @@
 				8435020223B2484000D505F1 /* DeviceTableViewCell */,
 				843501EA23B247A300D505F1 /* AppDelegate.swift */,
 				843501FE23B2480200D505F1 /* Main.storyboard */,
-				84F8B84523B38CA000078500 /* IMHeartRateMonitor.swift */,
 				8435020023B2481100D505F1 /* ViewController.swift */,
 				843501F323B247A300D505F1 /* Assets.xcassets */,
 				843501F523B247A300D505F1 /* LaunchScreen.storyboard */,

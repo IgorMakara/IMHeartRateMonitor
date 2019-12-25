@@ -2,7 +2,7 @@ PODS:
   - IMHeartRateMonitor (1.0.0)
 
 DEPENDENCIES:
-  - IMHeartRateMonitor (~> 1.0)
+  - IMHeartRateMonitor
 
 SPEC REPOS:
   trunk:
@@ -11,6 +11,6 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   IMHeartRateMonitor: 5b9901a6edaf40d3f66cfbf16fd1d4d95e7faa04
 
-PODFILE CHECKSUM: 4c916e5e0e24f61de19dc47b691862eb100c6092
+PODFILE CHECKSUM: ff7bbea8efd5e0c176ed1715c437199579aa0a2f
 
 COCOAPODS: 1.8.4
