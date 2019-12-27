@@ -36,8 +36,9 @@
 # Usage
 
 ## Import 
-
+```ruby
         import IMHeartRateMonitor
+```
 
 ## Create Monitor
 
